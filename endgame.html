@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>End Game!</title>
+  </head>
+  <body>
+    <div class="container-EG">
+      <div id="end" class="center column">
+        <h1 id="endScore">0</h1>
+        <form class="EG-form-container">
+          <h2 id="EG-text">Enter your name below to save your score!</h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter name"
+          />
+          <button
+            class="btn btn-save"
+            id="saveScoreBtn"
+            type="submit"
+            onClick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a href="/index.html"
+          ><button class="btn btn-save">Go Home Without Saving</button></a
+        >
+        <script src="./assets/endgame.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
