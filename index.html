@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Coding Quiz</title>
+  </head>
+  <body>
+    <header>
+      <a href="./highscore.html" class="score-pos" id="score-link"
+        ><button class="btn btn-HS">View High Scores</button></a
+      >
+      <div class="timer-pos" id="timer">
+        <p>Timer<span class="score"></span></p>
+      </div>
+    </header>
+    <div class="main-body-div" id="main-div-card">
+      <div id="container" class="quiz-container">
+        <div id="quiz" class="hide">
+          <div id="question">Question</div>
+          <div id="answer-btns" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="startQuiz" class="start-quiz btn" onClick="startTimer()">
+            Start Quiz
+          </button>
+          <button id="nxt-btn" class="nextBtn btn hide">Next</button>
+          <a href="endgame.html">
+            <button
+              id="submit-screen"
+              class="submitScreenBtn btn hide"
+            ></button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/style.js"></script>
+  </body>
+</html>
