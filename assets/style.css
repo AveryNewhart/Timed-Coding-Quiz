@@ -1,0 +1,162 @@
+
+
+:root {
+    --hue-nuetral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightblue;
+}
+
+#score-link {
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+.score-pos {
+    width: 100vw;
+    margin: 0;
+    margin-left: 1%; 
+}
+
+.timer-pos {
+    width: 100vw;
+    margin: 0;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-body-div {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    width: 800px;
+    max-width: 80%;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: purple;
+    color: white;
+    border: 2px solid black;
+    outline: none;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    opacity: .5;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+    background-color: green;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+    background-color: red;
+    color: black;
+}
+
+.start-quiz {
+    font: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.EG-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+
+input::placeholder {
+    color: lightgray;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
