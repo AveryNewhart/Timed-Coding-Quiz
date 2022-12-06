@@ -18,4 +18,4 @@
 
 ![screenshot of website](./assets/finished-quiz.png)
 
-- Link to webpage
+- Link to webpage https://averynewhart.github.io/Timed-Coding-Quiz/index.html
