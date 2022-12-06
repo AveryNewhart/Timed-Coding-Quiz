@@ -125,7 +125,7 @@ function setStatusClass(element, correct) {
     }
 }
 
-function displayCount() {
+function displayCount() { // displays the current time
     timer.textContent = time;
 } 
 
@@ -134,15 +134,16 @@ function hideResultText () {
 }
 
 
-function clearStatusClass(element) {
+function clearStatusClass(element) { // removes styling when going to next question.
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
 
-function appearHighScores() {
+function appearHighScores() { //removes the hidden attribute on highScore
     highScore.removeAttribute("hidden");
 }
 
+// event listeners
 startButton.addEventListener('click', startTest)
 nextBtn.addEventListener('click', () => {
     currentQuestionNum++
@@ -150,7 +151,7 @@ nextBtn.addEventListener('click', () => {
 })
 viewScore.addEventListener('click', appearHighScores)
 
-
+//Setting the time
 var time = 60;
     var timeIntervalUp;
 
@@ -172,17 +173,8 @@ var time = 60;
         document.getElementById("timer").innerHTML = "Times up!";
     }
 
+    //stopping the timer
     function stopTimer() {
         clearInterval(timeIntervalUp);
         document.getElementById("timer").innerHTML = "Final Score: " + time;
     }
-
-     // localStorage.setItem('time', JSON.stringify(time))
-    //localStorage.setItem('time', JSON.stringify(time))
-
-   // if (timeCount < 9) {
-       // let addZero = timeCount.textContent;
-       // timeCount.textContent = "0" + addZero;
- 
-// must add event listenter to start quiz on button click!
-// ex: start.addEventListener("Click",startQuiz);

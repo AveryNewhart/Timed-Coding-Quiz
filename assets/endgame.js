@@ -3,12 +3,14 @@ const saveScoreBtn = document.getElementById('saveScoreBtn');
 const endScore = document.getElementById('endScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
+//getting the score which is the time remaining
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGH_SCORES = 5;
 
 endScore.innerText = mostRecentScore;
 
+//can not press save unless content in box
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
