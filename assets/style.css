@@ -1,162 +1,360 @@
+#main
+{
+   position:fixed;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   margin: 0px;
+   padding:0;
+   
+   
+}
+body, html {
+    height: 100%;
+    width:100%;
+    margin: 0;
 
-
-:root {
-    --hue-nuetral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
+    opacity: .85;
+ 
+        background-color: black;
+        
+        padding: 0;
+        font-family: "IBM Plex Sans", sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: purple;
+
+.search-bar {
+    width:50px;
 }
 
-header {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
+.userSearchClass {
+    width:210px;
     height: 50px;
-    flex-direction: row;
-    align-items: center;
-    background-color: lightblue;
 }
 
-#score-link {
-    cursor: pointer;
+.main-header {
+
+    text-align: center;
+    font-size:xx-large;
+    
+    
+    
 }
 
-a:hover {
-    opacity: .5;
-}
-
-.score-pos {
-    width: 100vw;
+h1 {
+    font: 2.8em Sansita, sans-serif;
     margin: 0;
-    margin-left: 1%; 
-}
+	-webkit-text-stroke: 2px black; /* width and color */
+  }
 
-.timer-pos {
-    width: 100vw;
-    margin: 0;
-    margin-right: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+  h2 {
+	-webkit-text-stroke: 2px black; /* width and color */
+  }
 
-.main-body-div {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
 
-.quiz-container {
-    width: 800px;
-    max-width: 80%;
-    background-color: lightblue;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
-}
+  .one {
+     
+      text-align: center;
+     
+      
+      
+  }
+  
+  .two {
+     
+      text-align: center;
+      padding-bottom: 20px;
+      
+      
+  }
 
-.btn-grid {
+  .grid {
+
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
+    grid-template-columns: 0fr 2fr;
+    grid-gap: 0rem;
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+	background: rgb(195,50,36);
+	background: linear-gradient(0deg, rgba(195,50,36,1) 0%, rgb(255, 255, 255) 100%);
+    opacity: .85;
+  
+    
+  }
+
+  .main-header {
+
+    text-align: center;
+    font-size:xx-large;
+    background-image: url("https://help.nflxext.com/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    opacity: .85;
+    
+    
+}
+  
+  .grid > * {
+      
+    padding: 0;
+  
+    border: 2px solid #38302e;
+   
+    border-radius: 5px;
+  }
+  
+  .three {
+    grid-column: 1 / 3;
+  
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.box {
+    
+	border-radius: 3%;
+	border: 1px solid #38302e;
+	
+	
+}
+
+
+
+#submitBtn {
+	margin: 0;
+	
+}
+
+
+
+
+#websiteReviews {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+footer {
+    
+    margin-top: 0;
+    bottom: 0;
+}
+
+.rottenTStyle {
+ 
+    height: 7vh;
+    width: 20vw;
+	text-align: center;
+}
+
+.netflixInfoStyle {
+	height: 75vh;
+    width: 50vw;
+	text-align:center;
+	overflow: scroll;
+} 
+
+#searchHistoryHead {
+    background-color: rgb(235, 174, 174);
+    width: 110px;
+    height: 0px;
+}
+
+
+   
+    
+
+
+* {
+	box-sizing: border-box;
+	
+}
+
+
+  #websiteReviews {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	margin: 0;
+	color: #E50914;
+	line-height: 1.25;
+}
+
+
+
+p {
+	font-size: 1.2rem;
 }
 
 .btn {
-    background-color: purple;
-    color: white;
-    border: 2px solid black;
-    outline: none;
-    margin: 10px;
-    border-radius: 5px;
-    padding: 5px 10px;
+	font-size: 2.0rem;
+	text-decoration: none;
+	padding: 6px 5px;
+	width: 210px;
+	display: block;
+	margin: 5px 0;
+	border-radius: var(--border-radius);
+	color: #E50914;;
+	border: none;
+	outline: none;
+	background-color: #38302e;
+	box-shadow: 3px 3px var(--dark);
+	transform: translate(-1px, -1px);
 }
+
+.mainReviews {
+	justify-content: space-between;
+	display: flex;
+}
+
+
 
 .btn:hover {
-    opacity: .5;
+	color: var(--primary);
+	background-color: var(--tertiary);
+	transform: translate(0, 0);
+	box-shadow: 2px 2px var(--dark);
 }
 
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: black;
-    background-color: green;
+.btn-inline {
+	display: inline;
 }
 
-.btn.wrong {
-    --hue: var(--hue-wrong);
-    background-color: red;
-    color: black;
+.btn-back {
+	border-radius: var(--border-radius);
+	color: var(--primary);
+	border: none;
+	outline: none;
+	background-color: var(--light-dark);
+	box-shadow: 3px 3px var(--secondary);
+	transform: translate(-1px, -1px);
+	display: inline-block;
+	width: auto;
+	margin-top: 20px;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.2rem;
 }
 
-.start-quiz {
-    font: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
+.btn-back:hover {
+	color: var(--primary);
+	background-color: var(--tertiary);
+	transform: translate(0, 0);
+	box-shadow: 2px 2px var(--dark);
 }
 
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.hide {
-    display: none;
-}
 
-.EG-form-container {
+
+
+
+
+
+
+
+
+
+
+
+.userReviewClass {
     width: 100%;
+    height: 20vh;
+   
     display: flex;
-    flex-direction: column;
     align-items: center;
-    max-width: 30rem;
+    justify-content: left;
+	border:0;
+	
+    
+    
 }
 
-input {
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border: none;
+footer {
+	color: rgb(255, 70, 70);
 }
 
-input::placeholder {
-    color: lightgray;
+
+
+.userNameClass {
+    text-align: right;
+    border: 0;
 }
 
-#username {
-    margin-bottom: 3rem;
+.grid {
+    height:100vh;
     width: 100%;
-    outline: none;
+    width: 100vw;
 }
 
-#end-text {
-    font-size: 2.4rem;
-    color: white;
-    text-align: center;
+.placeholderImg {
+	width: 40px;
+	height: 50px;
+	object-fit: contain;
 }
 
-#saveScoreBtn {
-    border: none;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.center {
-    justify-content: center;
-    align-items: center;
-}
-
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */; /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  #userFeedback {
+	  text-align: center;
+  }
